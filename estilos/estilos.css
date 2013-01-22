@@ -1,3 +1,50 @@
-body {
-	
+* {
+  font-family: Arial;
 }
+
+body {
+	background-color: #FFCC99;
+}
+
+h1 {
+	text-align: center;
+}
+
+nav {
+	background-color: #003333;
+	padding: 3px 3px 3px 3px;
+}
+
+li {
+  	display: inline;
+  	margin: 0 10px;
+	padding: 3px 3px 3px 3px;
+	border: 2px solid #66CC99;
+	background-color: #66CC99;
+}
+
+.formulario {
+	padding: 10px 10px 10px 10px;
+	border: 2px solid #FFFFFF;
+	background-color: #66CC99;
+}
+
+.texto_grande {
+	width: 1000px;
+	height: 150px;
+}
+
+.etiqueta {
+	text-align:right;
+	width:200px;
+}
+
+input {
+	width: 100px;
+}
+
+footer {
+	padding: 10px 3px 3px 0px;
+}
+
+

@@ -1,40 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-ES">
 <head>
-  <meta charset="utf-8" />
-
-  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
-       Remove this if you use the .htaccess -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
-  <title>historias</title>
-  <meta name="description" content="" />
-  <meta name="author" content="usuario" />
-
-  <meta name="viewport" content="width=device-width; initial-scale=1.0" />
-
-  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-  <link rel="shortcut icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+	<meta charset="utf-8" />
+	<title>Historias</title>
+	<link rel="stylesheet" href="../estilos/estilos.css">
 </head>
-
 <body>
-  <div>
-    <header>
-      <h1>historias</h1>
-    </header>
-    <nav>
-      <p><a href="/">Home</a></p>
-      <p><a href="/contact">Contact</a></p>
-    </nav>
-
-    <div>
-      
-    </div>
-
-    <footer>
-     <p>&copy; Copyright  by usuario</p>
-    </footer>
-  </div>
+	<h1>Gestiona las historias</h1>
+	<hr>
+	<p>En esta seccion podras consultar todas las historias de tus pacientes, información de cada una de sus citas anteriores...</p>
+	<nav>	
+		<ul>
+			<li><a href="../index.html">Inicio</a></li>
+			<li><a href="pacientes.html">Pacientes</a></li>
+			<li><a href="citas.html">Citas</a></li>
+			<li><a href="historias.html">Historias clínicas</a></li>
+			<li><a href="medicacion.html">Medicación</a></li>
+			<li><a href="facturas.html">Facturas</a></li>
+		</ul>
+	</nav>
+	<div class="formulario">
+		<p>Si lo desea podrá buscar la historia de un paciente por su DNI o por su nombre y apellidos</p>
+		<form id="busca_historias" action="" method="POST">
+			<label for="dni">DNI: </label>
+			<input type="text" name="dni">
+			<br>
+			<label for="nombre">Nombre: </label>
+			<input type="text" name="nombre">
+			<br>
+			<label for="apellidos">Apellidos: </label>
+			<input type="text" name="apellidos">
+			<br>
+			<input type="submit" name="buscar" value="Buscar">
+		</form>
+	</div>
+	<div class="formulario">
+		<p>Si lo desea podrá crear una nueva historia para un paciente</p>
+		<form id="crea_historias" action="" method="POST">
+			<fieldset>
+				<legend>Historia clínica</legend>
+				<fieldset>
+					<legend>Antecedentes personales</legend>
+					<label for="somaticos">Somáticos: </label>
+					<br>
+					<input class="texto_grande" type="textarea" name="somaticos">
+					<br>
+					<label for="psiquiatricos">Psiquiátricos (tratamientos previos, tratamiento actual...): </label>
+					<br>
+					<input class="texto_grande" type="textarea" name="psiquiatricos">
+					<br>
+					<label for="toxicos">Tóxicos: </label>
+					<br>
+					<input class="texto_grande" type="textarea" name="toxicos">
+					<br>
+					<label for="biograficos">Biográficos: </label>
+					<br>
+					<input class="texto_grande" type="textarea" name="biograficos">
+				</fieldset>
+				<label for="enfermedad_actual">Enfermedad actual</label>
+				<br>
+				<input class="texto_grande" type="textarea" name="enfermedad_actual">
+				<br>
+				<label for="exploracion_psicopatologica">Exploración psicopatológica</label>
+				<br>
+				<input class="texto_grande" type="textarea" name="exploracion_psicopatologica">
+				<br>
+				<label for="juicio_clinico">Juicio clínico</label>
+				<br>
+				<input class="texto_grande" type="textarea" name="juicio_clinico">
+				<br>
+				<label for="tratamiento">Tratamiento</label>
+				<br>
+				<input class="texto_grande" type="textarea" name="tratamiento">					
+				<br>
+				<input type="submit" name="crear" value="Crear">
+			</fieldset>
+		</form>
+	</div>
 </body>
+<footer>Don Gato Soluciones de Software S.A.&copy; Copyright 2013</footer>
 </html>
