@@ -19,6 +19,47 @@
 			<li><a href="facturas.html">Facturas</a></li>
 		</ul>
 	</nav>
+	<div class="formulario">
+		<p>Si lo desea podrá buscar citas para un paciente</p>
+		<form action="" method="POST">
+			<fieldset>
+				<label class="etiqueta" for="dni">DNI: </label>
+				<input type="text" name="dni">
+				<br>
+				<label for="nombre">Nombre: </label>
+				<input type="text" name="nombre">
+				<br>
+				<label for="apellidos">Apellidos: </label>
+				<input type="text" name="apellidos">
+				<br>
+			</fieldset>
+			<input type="submit" name="buscar" value="Buscar">
+		</form>
+	</div>
+	<div class="formulario">
+		<p>Si lo desea podrá crear una nueva cita indicando fecha y hora</p>
+		<form action="" method="POST">
+			<fieldset>
+				<legend>Datos de la cita</legend>
+				<label for="dni">DNI: </label>
+				<input type="text" name="dni">
+				<br>
+				<label for="nombre">Nombre: </label>
+				<input type="text" name="nombre">
+				<br>
+				<label for="apellidos">Apellidos: </label>
+				<input type="text" name="apellidos">
+				<br>
+				<label for="fecha_cita">Fecha: </label>
+				<input type="date" name="fecha_cita">
+				<br>
+				<label for="hora_cita">Hora: </label>
+				<input type="time"  name="hora_cita">
+				<br>
+				<input type="submit" name="crear" value="Crear">
+			</fieldset>
+		</form>
+	</div>
 </body>
-<footer><em>Don Gato Soluciones de Software S.A. Copyright 2013</em></footer>
+<footer>Don Gato Soluciones de Software S.A.&copy; Copyright 2013</footer>
 </html>

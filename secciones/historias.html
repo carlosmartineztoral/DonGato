@@ -22,15 +22,17 @@
 	<div class="formulario">
 		<p>Si lo desea podrá buscar la historia de un paciente por su DNI o por su nombre y apellidos</p>
 		<form id="busca_historias" action="" method="POST">
-			<label for="dni">DNI: </label>
-			<input type="text" name="dni">
-			<br>
-			<label for="nombre">Nombre: </label>
-			<input type="text" name="nombre">
-			<br>
-			<label for="apellidos">Apellidos: </label>
-			<input type="text" name="apellidos">
-			<br>
+			<fieldset>
+				<label for="dni">DNI: </label>
+				<input type="text" name="dni">
+				<br>
+				<label for="nombre">Nombre: </label>
+				<input type="text" name="nombre">
+				<br>
+				<label for="apellidos">Apellidos: </label>
+				<input type="text" name="apellidos">
+				<br>
+			</fieldset>
 			<input type="submit" name="buscar" value="Buscar">
 		</form>
 	</div>
@@ -38,40 +40,49 @@
 		<p>Si lo desea podrá crear una nueva historia para un paciente</p>
 		<form id="crea_historias" action="" method="POST">
 			<fieldset>
+				<label for="dni">DNI: </label>
+				<input type="text" name="dni">
+				<br>
+				<label for="nombre">Nombre: </label>
+				<input type="text" name="nombre">
+				<br>
+				<label for="apellidos">Apellidos: </label>
+				<input type="text" name="apellidos">
+				<br>
 				<legend>Historia clínica</legend>
 				<fieldset>
 					<legend>Antecedentes personales</legend>
 					<label for="somaticos">Somáticos: </label>
 					<br>
-					<input class="texto_grande" type="textarea" name="somaticos">
+					<textarea name="somaticos" rows=4 cols=200> </textarea>
 					<br>
 					<label for="psiquiatricos">Psiquiátricos (tratamientos previos, tratamiento actual...): </label>
 					<br>
-					<input class="texto_grande" type="textarea" name="psiquiatricos">
+					<textarea name="psiquiatricos" rows=4 cols=200> </textarea>
 					<br>
 					<label for="toxicos">Tóxicos: </label>
 					<br>
-					<input class="texto_grande" type="textarea" name="toxicos">
+					<textarea name="toxicos" rows=4 cols=200> </textarea>
 					<br>
 					<label for="biograficos">Biográficos: </label>
 					<br>
-					<input class="texto_grande" type="textarea" name="biograficos">
+					<textarea name="biograficos" rows=4 cols=200> </textarea>
 				</fieldset>
 				<label for="enfermedad_actual">Enfermedad actual</label>
 				<br>
-				<input class="texto_grande" type="textarea" name="enfermedad_actual">
+				<textarea name="enfermedad_actual" rows=4 cols=200> </textarea>
 				<br>
 				<label for="exploracion_psicopatologica">Exploración psicopatológica</label>
 				<br>
-				<input class="texto_grande" type="textarea" name="exploracion_psicopatologica">
+				<textarea name="exploracion_psicopatologica" rows=4 cols=200> </textarea>
 				<br>
 				<label for="juicio_clinico">Juicio clínico</label>
 				<br>
-				<input class="texto_grande" type="textarea" name="juicio_clinico">
+				<textarea name="juicio_clinico" rows=4 cols=200> </textarea>
 				<br>
 				<label for="tratamiento">Tratamiento</label>
 				<br>
-				<input class="texto_grande" type="textarea" name="tratamiento">					
+				<textarea name="tratamiento" rows=4 cols=200> </textarea>					
 				<br>
 				<input type="submit" name="crear" value="Crear">
 			</fieldset>

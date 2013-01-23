@@ -2,13 +2,13 @@
 <html lang="es-ES">
 <head>
 	<meta charset="utf-8" />
-	<title>Pacientes</title>
+	<title>Medicación</title>
 	<link rel="stylesheet" href="../estilos/estilos.css">
 </head>
 <body>
-	<h1>Gestiona tus pacientes</h1>
+	<h1>Gestiona las medicaciones de tus pacientes</h1>
 	<hr>
-	<p>En esta sección podrás consultar todos los datos relativos a tus pacientes y crear nuevos pacientes...</p>
+	<p>En esta sección podrás consultar todos los datos relativos a las medicaciones de los pacientes y crear nuevos tratamientos...</p>
 	<nav>	
 		<ul>
 			<li><a href="../index.html">Inicio</a></li>
@@ -20,7 +20,7 @@
 		</ul>
 	</nav>
 	<div class="formulario">
-		<p>Si lo desea podrá buscar un paciente por su DNI o por su nombre y apellidos</p>
+		<p>Si lo desea podrá buscar un tratamiento por el DNI del paciente o por su nombre y apellidos</p>
 		<form action="" method="POST">
 			<fieldset>
 				<label class="etiqueta" for="dni">DNI: </label>
@@ -37,7 +37,7 @@
 		</form>
 	</div>
 	<div class="formulario">
-		<p>Si lo desea podrá crear un nuevo paciente al que después podrá añadir la historia clínica, tratamientos, etc...</p>
+		<p>Si lo desea podrá crear un nuevo tratamiento para un paciente</p>
 		<form action="" method="POST">
 			<fieldset>
 				<legend>Datos del paciente</legend>
@@ -50,20 +50,8 @@
 				<label for="apellidos">Apellidos: </label>
 				<input type="text" name="apellidos">
 				<br>
-				<label for="direccion">Dirección: </label>
-				<input type="text" name="direccion">
-				<br>
-				<label for="fecha_de_nacimiento">Fecha de nacimiento: </label>
-				<input type="date" name="fecha_de_nacimiento">
-				<br>
-				<label for="telefono_movil">Teléfono móvil: </label>
-				<input type="tel"  name="telefono_movil">
-				<br>
-				<label for="telefono_fijo">Teléfono fijo: </label>
-				<input type="tel"  name="telefono_fijo">
-				<br>
-				<label for="email">Email: </label>
-				<input type="email" name="email">
+				<label for="tratamiento">Tratamiento: </label>
+				<textarea name="tratamiento" rows=4 cols=100> </textarea>
 				<br>
 				<input type="submit" name="crear" value="Crear">
 			</fieldset>
@@ -72,3 +60,4 @@
 </body>
 <footer>Don Gato Soluciones de Software S.A.&copy; Copyright 2013</footer>
 </html>
+
